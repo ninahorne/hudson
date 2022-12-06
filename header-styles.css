@@ -1,0 +1,6 @@
+--light-blue: #0077C5;
+
+
+.header__top {
+  background: var(--light-blue);
+}
