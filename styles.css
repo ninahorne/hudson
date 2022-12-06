@@ -1,0 +1,82 @@
+button {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+strong {
+  font-family: 'proxima_novabold';
+}
+.check {
+  height: 10px
+}
+.hidden {
+  display: none !important;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0077c5;
+  padding: 0.5em 3rem;
+}
+
+.header__top .header__msf-logo {
+  height: 25px;
+  width: auto;
+}
+.header__location-wrapper {
+  position: relative;
+}
+
+.header__change-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #072661;
+  border-radius: 3rem;
+  height: 36px;
+  width: 200px;
+}
+
+.header__world-icon {
+  height: 14px;
+  width: auto;
+}
+.header__change-text {
+  color: white;
+  margin-left: 1rem;
+  font-family: 'proxima_novaregular';
+  font-size: 14px;
+}
+
+
+.header__dropdown {
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 0.5rem 0 0 0;
+  width: 100%
+}
+.header__dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header__dropdown ul li a,
+.header__dropdown ul li a:visited {
+  text-decoration: none;
+  color: #072661;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'proxima_novaregular';
+  padding: 1rem;
+  border-bottom: 1px solid #b9b9b9;
+  font-size: 14px;
+}
+.header__dropdown ul li:last-child a,
+.header__dropdown ul li:last-child a:visited {
+  border: none;
+}

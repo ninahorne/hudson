@@ -1,4 +1,35 @@
-<link rel="stylesheet" href="./header-styles.css" />
+<link rel="stylesheet" href="./fonts/fonts.css" />
+<link rel="stylesheet" href="./styles.css" />
+<script src="./scripts.js"></script>
 <header>
-  <div class="header__top"></div>
+  <div class="header__top">
+    <div>
+      <img
+        class="header__msf-logo"
+        src="./images/msf-mobility-logo.png"
+        alt="MSF Mobility Logo"
+      />
+    </div>
+    <div class="header__location-wrapper">
+      <button id="changeLocationButton" class="header__change-location">
+        <img src="./images/globe-light.svg" alt="" class="header__world-icon" />
+        <p class="header__change-text">Change Location</p>
+      </button>
+      <div id="changeLocationDropdown" class="header__dropdown hidden">
+        <ul>
+          <li>
+            <a href="">
+              HudsonLink
+              <img class="check" src="./images/check.svg" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <strong>New locations coming soon!</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
