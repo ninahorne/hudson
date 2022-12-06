@@ -3,6 +3,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
 }
 strong {
   font-family: 'proxima_novabold';
@@ -32,7 +33,9 @@ strong {
 .icon-white img {
   width: 15px;
 }
-
+.external-link {
+  margin-left: auto;
+}
 .header__top {
   display: flex;
   align-items: center;
@@ -121,22 +124,37 @@ strong {
   display: grid;
   grid-template-columns: 3fr 2fr;
   padding: 2rem;
+  position: relative;
 }
+
+@media screen and (max-width: 767px) {
+  .header__bottom {
+    padding: 1rem;
+  }
+}
+
 .bottom__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+@media screen and (max-width: 767px) {
+  .bottom__wrapper {
+    display: none;
+  }
+}
 .logo__wrapper {
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
+  padding-right: 3rem;
 }
 .bottom__logo {
   width: 600px;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .bottom__top {
@@ -168,7 +186,7 @@ strong {
   margin: 1rem 0;
 }
 
-.white__left{
+.white__left {
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
@@ -192,4 +210,60 @@ strong {
 .white__right img {
   width: 30px;
   margin: 0 0.5rem;
+}
+
+.header__menu-button,
+.header__mobile-menu {
+  display: none;
+}
+.header__mobile-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100%);
+  background-color: #072661;
+  border-top: 1px solid #ffffff;
+
+}
+.header__mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header__mobile-menu ul li {
+  border-bottom: 1px solid #ffffff43;
+  padding: 1rem;
+}
+.header__mobile-menu ul li a,
+.header__mobile-menu ul li a:visited {
+  color: white;
+  font-family: proxima_novaregular;
+  font-size: 22px;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.header__mobile-menu ul li a img {
+  width: 30px;
+  margin-right: 1rem;
+}
+.header__mobile-menu ul li a .icon img {
+  margin-right: 0;
+  width: 15px;
+}
+
+.header__mobile-menu ul li a .icon {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .header__menu-button {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
 }

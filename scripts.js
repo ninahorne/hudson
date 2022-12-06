@@ -8,4 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   changeLocationButton.addEventListener('click', handleClick);
+
+  const mobileButton = document.getElementById('mobileMenuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const handleMobileClick = () => {
+    mobileMenu.classList.toggle('hidden');
+  };
+  mobileButton.addEventListener('click', handleMobileClick);
 });
