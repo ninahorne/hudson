@@ -8,11 +8,31 @@ strong {
   font-family: 'proxima_novabold';
 }
 .check {
-  height: 10px
+  height: 10px;
 }
 .hidden {
   display: none !important;
 }
+.icon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-left: 1rem;
+}
+.icon-white {
+  background-color: white;
+}
+.icon img {
+  width: 30px;
+}
+
+.icon-white img {
+  width: 15px;
+}
+
 .header__top {
   display: flex;
   align-items: center;
@@ -43,7 +63,6 @@ strong {
 @media screen and (max-width: 567px) {
   .header__change-location {
     padding: 0 1rem;
-
   }
   .header__top .header__msf-logo {
     margin-right: 0.5rem;
@@ -67,14 +86,13 @@ strong {
   font-size: 14px;
 }
 
-
 .header__dropdown {
   border-radius: 10px;
   background-color: white;
   position: absolute;
   box-shadow: 0px 3px 6px #00000029;
   margin: 0.5rem 0 0 0;
-  width: 100%
+  width: 100%;
 }
 .header__dropdown ul {
   list-style: none;
@@ -96,4 +114,82 @@ strong {
 .header__dropdown ul li:last-child a,
 .header__dropdown ul li:last-child a:visited {
   border: none;
+}
+
+.header__bottom {
+  background-color: #072661;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 2rem;
+}
+.bottom__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.logo__wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.bottom__logo {
+  width: 600px;
+  max-width: 100%;
+}
+
+.bottom__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottom__top a,
+.bottom_top a:visited {
+  color: white;
+  text-decoration: none;
+  font-family: 'proxima_novaregular';
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 1rem;
+}
+.bottom__white-wrapper {
+  display: flex;
+  width: auto;
+  margin-left: auto;
+}
+.bottom__white {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.white__left{
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.white__left {
+  border-right: 1px solid #b9b9b9;
+}
+.white__right a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.white__left p,
+.white__right p {
+  font-family: 'proxima_novabold';
+  color: #072661;
+  margin-right: 1rem;
+}
+
+.white__left img,
+.white__right img {
+  width: 30px;
+  margin: 0 0.5rem;
 }
