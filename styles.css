@@ -1,3 +1,6 @@
+#spaceHolder{
+  height: 500px;
+}
 button {
   box-shadow: none;
   border: none;
@@ -98,6 +101,7 @@ strong {
   width: 100%;
   z-index:2;
 }
+
 .header__dropdown ul {
   list-style: none;
   padding: 0;
@@ -155,7 +159,7 @@ strong {
 }
 .bottom__logo {
   width: 600px;
-  max-width: 90%;
+  max-width: 90% ;
 }
 
 .bottom__top {
@@ -195,6 +199,7 @@ strong {
 .white__left {
   border-right: 1px solid #b9b9b9;
 }
+
 .white__right a {
   display: flex;
   align-items: center;
@@ -207,10 +212,14 @@ strong {
   margin-right: 1rem;
 }
 
-.white__left img,
+.white__left svg,
 .white__right img {
   width: 30px;
   margin: 0 0.5rem;
+}
+
+.white__left svg {
+  fill: #072661;
 }
 
 .header__menu-button,
@@ -267,4 +276,35 @@ strong {
   .header__mobile-menu {
     display: block;
   }
+}
+
+footer {
+  background-color: #072661;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+
+.footer__links {
+  margin: 4rem 0 0;
+  display: flex;
+  align-items: center;
+}
+.footer__links a {
+  color: #FFFFFF;
+  font-family: 'proxima_novaregular';
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .bottom__logo {
+  max-width: 100% ;
+}
+
+.footer__links .vertical-line {
+  border-left: 1px solid white;
+  height: 20px;
+  margin: 0 1rem;
 }
