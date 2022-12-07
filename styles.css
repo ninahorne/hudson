@@ -195,14 +195,14 @@ strong {
 .white__left {
   display: flex;
   align-items: center;
-  padding: 0 1.5rem;
+  padding: 0 calc(1.5rem - 8px) 0 1.5rem;
 }
 .white__left {
   border-right: 1px solid #b9b9b9;
 }
 
 .white__right {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0 calc(1.5rem - 8px);
 }
 
 .white__right a {
@@ -226,6 +226,7 @@ strong {
   width: 30px;
   margin: 0 0.5rem;
 }
+
 
 .white__left svg {
   fill: #072661;
