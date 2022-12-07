@@ -19,6 +19,7 @@ const handleMobileMenuToggle = () => {
   const mobileMenu = document.getElementById('mobileMenu');
   const handleMobileClick = () => {
     mobileMenu.classList.toggle('hidden');
+    mobileButton.classList.toggle('open');
   };
   mobileButton.addEventListener('click', handleMobileClick);
 };
