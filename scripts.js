@@ -29,5 +29,6 @@ const handleActiveMenuItems = () => {
     document.querySelector(`.white__left [href="${pathname}"] svg`) ||
     document.querySelector(`.white__left [href="${pathname}${search}"] svg`);
 
-  menuItem.style.fill = '#f19e15';
+  menuItem?.style.fill = '#f19e15';
+  console.dir({menuItem})
 };
