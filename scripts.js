@@ -24,8 +24,10 @@ const handleMobileMenuToggle = () => {
   mobileButton.addEventListener('click', handleMobileClick);
 };
 const handleActiveMenuItems = () => {
-  const href = window.location.href.toLowerCase();
-  const menuItem = document.querySelector(`.white__left [href="${href}"] svg`);
-  menuItem.style.fill = '#f19e15'
- 
+  const { pathname, search } = window.location;
+  const menuItem =
+    document.querySelector(`.white__left [href="${pathname}"] svg`) ||
+    document.querySelector(`.white__left [href="${pathname}${search}"] svg`);
+
+  menuItem.style.fill = '#f19e15';
 };
