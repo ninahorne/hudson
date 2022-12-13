@@ -24,11 +24,23 @@ const handleMobileMenuToggle = () => {
   mobileButton.addEventListener('click', handleMobileClick);
 };
 const handleActiveMenuItems = () => {
-  const { pathname, search } = window.location;
-  const menuItem =
-    document.querySelector(`.white__left [href="${pathname}"] svg`) ||
-    document.querySelector(`.white__left [href="${pathname}${search}"] svg`);
+  const { pathname } = window.location;
+  let menuItem;
+  if (/MapsandSchedules/i.test(pathname)) {
+    menuItem = document.querySelector('#mapsAndSchedules svg');
+  }
+  if (/TraveltoNYC/i.test(pathname)) {
+    menuItem = document.querySelector('#travelToNYC svg');
+  }
+  if (/Tripplanner/i.test(pathname)) {
+    menuItem = document.querySelector('#tripPlanner svg');
+  }
+  if (/PurchaseTickets/i.test(pathname)) {
+    menuItem = document.querySelector('#purchaseTickets svg');
+  }
 
-  menuItem?.style.fill = '#f19e15';
-  console.dir({menuItem})
+  if (menuItem) {
+    menuItem.style.fill = '#f19e15';
+    console.dir({ menuItem });
+  }
 };

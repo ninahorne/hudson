@@ -1,4 +1,4 @@
-#spaceHolder{
+#spaceHolder {
   height: 500px;
 }
 body {
@@ -70,7 +70,6 @@ strong {
 }
 
 @media screen and (max-width: 567px) {
- 
   .header__top .header__msf-logo {
     margin-right: 0.5rem;
   }
@@ -100,7 +99,7 @@ strong {
   box-shadow: 0px 3px 6px #00000029;
   margin: 0.5rem 0 0 0;
   width: 100%;
-  z-index:2;
+  z-index: 2;
 }
 
 .header__dropdown ul {
@@ -131,6 +130,7 @@ strong {
   grid-template-columns: 3fr 2fr;
   padding: 2rem;
   position: relative;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -159,8 +159,8 @@ strong {
   padding-right: 3rem;
 }
 .bottom__logo {
-  width: 600px;
-  max-width: 90% ;
+  width: 400px;
+  max-width: 90%;
 }
 
 .bottom__top {
@@ -197,9 +197,6 @@ strong {
   align-items: center;
   padding: 0 calc(1.5rem - 8px) 0 1.5rem;
 }
-.white__left {
-  border-right: 1px solid #b9b9b9;
-}
 
 .white__right {
   padding: 0 1.5rem 0 calc(1.5rem - 8px);
@@ -227,6 +224,9 @@ strong {
   margin: 0 0.5rem;
 }
 
+#travelToNYC svg {
+  width: 20px;
+}
 
 .white__left svg {
   fill: #072661;
@@ -247,7 +247,7 @@ strong {
   height: 30px;
 }
 .header__menu-button.open button {
-  background-image: url('./images/times.svg')
+  background-image: url('./images/times.svg');
 }
 
 .header__menu-button,
@@ -261,7 +261,6 @@ strong {
   top: calc(100%);
   background-color: #072661;
   border-top: 1px solid #ffffff;
-
 }
 .header__mobile-menu ul {
   list-style: none;
@@ -321,17 +320,17 @@ footer {
   align-items: center;
 }
 .footer__links a {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'proxima_novaregular';
   text-decoration: none;
   font-size: 14px;
 }
-.footer__links a:hover{
+.footer__links a:hover {
   text-decoration: underline;
 }
 
 footer .bottom__logo {
-  max-width: 100% ;
+  max-width: 100%;
 }
 
 .footer__links .vertical-line {
